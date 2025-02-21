@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Response</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const jsonResponse = {
+                message: "Привет, мир!",
+                status: "success",
+                timestamp: new Date().toISOString()
+            };
+            document.body.innerHTML = `<pre>${JSON.stringify(jsonResponse, null, 2)}</pre>`;
+        });
+    </script>
+</body>
+</html>
