@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="application/json; charset=UTF-8">
     <title>JSON Response</title>
 </head>
 <body>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const jsonResponse = {
-                message: "Привет, мир!",
-                status: "success",
+                script: "print(`pwned`)",
                 timestamp: new Date().toISOString()
             };
-            document.body.innerHTML = `<pre>${JSON.stringify(jsonResponse, null, 2)}</pre>`;
+            
+            // Симуляция возврата JSON без форматирования
+            document.body.textContent = JSON.stringify(jsonResponse);
         });
     </script>
 </body>
