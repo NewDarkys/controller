@@ -1,4 +1,4 @@
 {
 script: "print(`pwned`)",
 timestamp: new Date().toISOString()
-};
+}
